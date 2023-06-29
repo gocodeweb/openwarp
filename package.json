@@ -21,8 +21,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "openwarp.helloWorld",
-        "title": "Hello World"
+        "command": "openwarp.openWarp",
+        "title": "Open Warp Terminal"
       }
     ]
   },

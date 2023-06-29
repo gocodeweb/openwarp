@@ -12,13 +12,10 @@ export function activate(context: vscode.ExtensionContext) {
   // The command has been defined in the package.json file
   // Now provide the implementation of the command with registerCommand
   // The commandId parameter must match the command field in package.json
-  let disposable = vscode.commands.registerCommand(
-    "extension.openMacApp",
-    () => {
-      const appPath = "/Applications/Warp.app"; // Replace 'YourApp.app' with the actual app name and path
-      child_process.exec(`open -a "${appPath}"`);
-    }
-  );
+  let disposable = vscode.commands.registerCommand("openwarp.openWarp", () => {
+    const appPath = "/Applications/Warp.app"; // Replace 'YourApp.app' with the actual app name and path
+    child_process.exec(`open -a "${appPath}"`);
+  });
 
   context.subscriptions.push(disposable);
 }
